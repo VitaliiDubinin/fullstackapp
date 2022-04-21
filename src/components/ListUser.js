@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 export function ListUser() {
   const [users, setUsers] = useState([]);
+  console.log(users);
 
   useEffect(() => {
     getUsers();
