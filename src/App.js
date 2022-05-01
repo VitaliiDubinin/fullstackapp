@@ -1,8 +1,9 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import ListUser from "./components/ListUser";
 import CreateUser from "./components/CreateUser";
-
+// import Translate from "./components/Translate";
 import "./App.css";
+// import Translate from "../../translateapp/src/components/Translate";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         </nav>
         <Routes>
           <Route index element={<ListUser />} />
+          {/* <Route path="user/create" element={<Translate />} /> */}
           <Route path="user/create" element={<CreateUser />} />
         </Routes>
       </BrowserRouter>
