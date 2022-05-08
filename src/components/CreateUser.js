@@ -12,6 +12,7 @@ export function CreateUser() {
     const value = event.target.value;
 
     setInputs((values) => ({ ...values, [name]: value }));
+    console.log(inputs);
   };
 
   const handleSubmit = (event) => {
